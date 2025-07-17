@@ -1,0 +1,42 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {}
+V {}
+S {}
+E {}
+N -540 -1450 -540 -1420 {name=IN1
+lab=VDD}
+N -540 -1360 -540 -1330 {lab=GND}
+N -540 -1360 -540 -1330 {lab=GND}
+C {code_shown.sym} -510 -1150 0 0 {name=SPICE only_toplevel=false 
+value=
+".include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.include /foss/designs/globalfoundries-pdk-libs-gf180mcu_osu_sc/gf180mcu_osu_sc_gp9t3v3/cells/inv/gf180mcu_osu_sc_gp9t3v3__inv_1_v2.spice
+X1 A Y VDD GND gf180mcu_osu_sc_gp9t3v3__inv_1
+*D G S B
+
+C1 Y GND 0.001pF
+
+
+"}
+C {code_shown.sym} -470 -790 0 0 {name=MEASURE only_toplevel=false value=
+"
+Vin1 A 0 PULSE(0 3.3 1n 100p 100p 10n 20n)
+.save all
+
+
+.control
+tran 1p 50n
+meas tran rise_result TRIG v(Y) VAL=0.33 RISE=1 TARG v(Y) VAL=2.97 RISE=1
+meas tran tfall_result TRIG v(Y) VAL=2.97 FALL=1 TARG v(Y) VAL=0.33 FALL=1
+meas tran tplh_A TRIG v(A) VAL=1.65 RISE=1 TARG v(Y) VAL=1.65 FALL=1 
+meas tran tphl_A TRIG v(A) VAL=1.65 FALL=1 TARG v(Y) VAL=1.65 RISE=1 
+echo 'The tplh value for A INV_1 is: $&tplh_A' > /foss/designs/NAND4/schematic/INV_propagation.txt
+echo 'The tphl value for A INV_1 is: $&tphl_A' >> /foss/designs/NAND4/schematic/INV_propagation.txt
+.endc
+
+"}
+C {vsource.sym} -540 -1390 0 0 {name=V2 value=3.3 savecurrent=false}
+C {lab_wire.sym} -540 -1335 0 0 {name=p6 sig_type=std_logic lab=GND}
+C {lab_wire.sym} -540 -1435 0 0 {name=p9 sig_type=std_logic lab=VDD}

@@ -1,0 +1,2 @@
+The tplh value for A NAND2_1 is: 4.58077E-11
+The tphl value for A NAND2_1 is: 4.00923E-11
