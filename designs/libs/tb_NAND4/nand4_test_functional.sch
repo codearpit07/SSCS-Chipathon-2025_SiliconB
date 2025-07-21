@@ -33,25 +33,15 @@ C1 Y GND 0.001pF
 C {code_shown.sym} 1120 160 0 0 {name=MEASURE only_toplevel=false value=
 "
 Vin1 A 0 PULSE(0 3.3 1n 10p 10p 10n 20n)
-Vin2 B 0 DC 3.3
-*Vin2 B 0 PULSE(0 3.3 2n 10p 10p 10n 20n)
-Vin3 C 0 DC 3.3
-*Vin3 C 0 PULSE(0 3.3 3n 10p 10p 10n 20n)
-Vin4 D 0 DC 3.3
-*Vin4 D 0 PULSE(0 3.3 4n 10p 10p 10n 20n)
+Vin2 B 0 PULSE(0 3.3 2n 10p 10p 10n 20n)
+Vin3 C 0 PULSE(0 3.3 3n 10p 10p 10n 20n)
+Vin4 D 0 PULSE(0 3.3 4n 10p 10p 10n 20n)
 *.tran 10p 50n
 .save all
 
 .control
-tran 1p 50n
-meas tran rise_result TRIG v(Y) VAL=0.33 RISE=1 TARG v(Y) VAL=2.97 RISE=1
-meas tran tfall_result TRIG v(Y) VAL=2.97 FALL=1 TARG v(Y) VAL=0.33 FALL=1
-meas tran tplh_A TRIG v(A) VAL=1.65 RISE=1 TARG v(Y) VAL=1.65 FALL=1 
-meas tran tphl_A TRIG v(A) VAL=1.65 FALL=1 TARG v(Y) VAL=1.65 RISE=1 
-print 0.5*(tphl_A + tplh_A)
-*print I(VDD)*V(VDD)
-*echo 'The tplh value for A NAND2_1 is: $&tplh_A' > /foss/designs/NAND4/schematic/NAND2_1_propagation.txt
-*echo 'The tphl value for A NAND2_1 is: $&tphl_A' >> /foss/designs/NAND4/schematic/NAND2_1_propagation.txt
+tran 10p 50n
+plot v(A)+16 v(B)+12 v(C)+8 v(D)+4 v(Y) 
 .endc
 
 "}
