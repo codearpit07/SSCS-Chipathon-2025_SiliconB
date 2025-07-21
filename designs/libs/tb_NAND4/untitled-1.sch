@@ -4,14 +4,14 @@ K {}
 V {}
 S {}
 E {}
-N -20 -280 -20 -250 {name=IN1
+N -760 -620 -760 -590 {name=IN1
 lab=VDD}
-N -20 -190 -20 -160 {lab=GND}
-N -20 -190 -20 -160 {lab=GND}
-C {vsource.sym} -20 -220 0 0 {name=V2 value=3.3 savecurrent=false}
-C {lab_wire.sym} -20 -165 0 0 {name=p6 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -20 -265 0 0 {name=p9 sig_type=std_logic lab=VDD}
-C {code_shown.sym} -90 150 0 0 {name=SPICE only_toplevel=false 
+N -760 -530 -760 -500 {lab=GND}
+N -760 -530 -760 -500 {lab=GND}
+C {vsource.sym} -760 -560 0 0 {name=V2 value=3.3 savecurrent=false}
+C {lab_wire.sym} -760 -505 0 0 {name=p6 sig_type=std_logic lab=GND}
+C {lab_wire.sym} -760 -605 0 0 {name=p9 sig_type=std_logic lab=VDD}
+C {code_shown.sym} -830 -190 0 0 {name=SPICE only_toplevel=false 
 value=
 ".include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
 .lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
@@ -30,15 +30,12 @@ C1 Y GND 0.001pF
 
 
 "}
-C {code_shown.sym} 1120 160 0 0 {name=MEASURE only_toplevel=false value=
+C {code_shown.sym} 380 -180 0 0 {name=MEASURE only_toplevel=false value=
 "
 Vin1 A 0 PULSE(0 3.3 1n 10p 10p 10n 20n)
 Vin2 B 0 DC 3.3
-*Vin2 B 0 PULSE(0 3.3 2n 10p 10p 10n 20n)
 Vin3 C 0 DC 3.3
-*Vin3 C 0 PULSE(0 3.3 3n 10p 10p 10n 20n)
 Vin4 D 0 DC 3.3
-*Vin4 D 0 PULSE(0 3.3 4n 10p 10p 10n 20n)
 *.tran 10p 50n
 .save all
 
