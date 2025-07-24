@@ -19,9 +19,9 @@
 | Task Name    | Date | Status | Ownership  | Comments |
 |---------|-----|--------------|-------|--------|
 | Schematic Level Simulations - NAND4_1  | 11/07/2025-21/07/2025  | Completed  | Arpit | Added the NAND4 spice file |
-| Schematic Level Simulations - NAND3_1  | 11/07/2025-21/07/2025  | Work in Progress  | Kowshik | Testbench ready and designed the first version of NAND3_1 Schematic |
-| Layout - NAND4_1  | 22/07/2025-04/08/2025  | Yet to Start  | Arpit |-|
-| Layout - NAND3_1  | 22/07/2025-04/08/2025 | Yet to Start  | Kowshik |-|
+| Schematic Level Simulations - NAND3_1  | 11/07/2025-21/07/2025  | Completed  | Kowshik | Added the NAND3 spice file |
+| Layout - NAND4_1  | 22/07/2025-04/08/2025  | Work in Progress  | Arpit |-|
+| Layout - NAND3_1  | 22/07/2025-04/08/2025 | Work in Progress  | Kowshik |-|
 | DRC and LVS - NAND4_1 | 22/07/2025-04/08/2025  | Yet to Start  | Arpit |-|
 | DRC and LVS - NAND3_1  | 22/07/2025-04/08/2025  | Yet to Start  | Kowshik |-|
 | Characterization using Charlib - NAND4_1  | 05/08/2025-25/08/2025  | Yet to Start  | Arpit |-|
