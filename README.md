@@ -20,12 +20,12 @@
 |---------|-----|--------------|-------|--------|
 | Schematic Level Simulations - NAND4_1  | 11/07/2025-21/07/2025  | Completed  | Arpit | Added the NAND4 spice file |
 | Schematic Level Simulations - NAND3_1  | 11/07/2025-21/07/2025  | Completed  | Kowshik | Added the NAND3 spice file |
-| Layout - NAND4_1  | 22/07/2025-04/08/2025  | Work in Progress  | Arpit |-|
-| Layout - NAND3_1  | 22/07/2025-04/08/2025 | Work in Progress  | Kowshik |-|
-| DRC and LVS - NAND4_1 | 22/07/2025-04/08/2025  | Yet to Start  | Arpit |-|
-| DRC and LVS - NAND3_1  | 22/07/2025-04/08/2025  | Yet to Start  | Kowshik |-|
-| Characterization using Charlib - NAND4_1  | 05/08/2025-25/08/2025  | Yet to Start  | Arpit |-|
-| Characterization using Charlib - NAND3_1  | 05/08/2025-25/08/2025   | Yet to Start  | Kowshik |-|
+| Layout - NAND4_1  | 22/07/2025-04/08/2025  | Work in Progress  | Arpit |Completed the stick diagram, working on magic for layouts|
+| Layout - NAND3_1  | 22/07/2025-04/08/2025 | Work in Progress  | Kowshik |Completed the stick diagram, working on magic for layouts|
+| DRC and LVS - NAND4_1 | 04/08/2025-15/08/2025  | Yet to Start  | Arpit |-|
+| DRC and LVS - NAND3_1  | 04/08/2025-15/08/2025  | Yet to Start  | Kowshik |-|
+| Characterization using Charlib - NAND4_1  | 15/08/2025-25/08/2025  | Yet to Start  | Arpit |-|
+| Characterization using Charlib - NAND3_1  | 15/08/2025-25/08/2025   | Yet to Start  | Kowshik |-|
 # IIC-OSIC-TOOLS Analog Design Project Template (GlobalFoundries 180nm)
 
 This repository is an analog design project template for the SSCS 2025 Chipathon (https://github.com/sscs-ose/sscs-chipathon-2025). The design environment is setup using the IIC-OSIC-TOOLS docker container (https://github.com/iic-jku/IIC-OSIC-TOOLS). The container is preconfigured with GlobalFoundries 180nm PDK (gf180mcuD).
