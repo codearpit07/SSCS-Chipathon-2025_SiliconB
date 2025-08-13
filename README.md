@@ -20,10 +20,10 @@
 |---------|-----|--------------|-------|--------|
 | Schematic Level Simulations - NAND4_1  | 11/07/2025-21/07/2025  | Completed  | Arpit | Added the NAND4 spice file |
 | Schematic Level Simulations - NAND3_1  | 11/07/2025-21/07/2025  | Completed  | Kowshik | Added the NAND3 spice file |
-| Layout - NAND4_1  | 22/07/2025-04/08/2025  | Work in Progress  | Arpit |Completed the stick diagram, working on magic for layouts|
-| Layout - NAND3_1  | 22/07/2025-04/08/2025 | Work in Progress  | Kowshik |Completed the stick diagram, working on magic for layouts|
-| DRC and LVS - NAND4_1 | 04/08/2025-15/08/2025  | Yet to Start  | Arpit |-|
-| DRC and LVS - NAND3_1  | 04/08/2025-15/08/2025  | Yet to Start  | Kowshik |-|
+| Layout - NAND4_1  | 22/07/2025-04/08/2025  | Completed  | Arpit |Completed the NAND4 Layout|
+| Layout - NAND3_1  | 22/07/2025-04/08/2025 | Completed  | Kowshik |Completed the NAND3 Layout|
+| DRC and LVS - NAND4_1 | 04/08/2025-15/08/2025  | Work in Progress  | Arpit |DRC Cleaned|
+| DRC and LVS - NAND3_1  | 04/08/2025-15/08/2025  | Work in Progress| Kowshik |DRC Cleaned|
 | Characterization using Charlib - NAND4_1  | 15/08/2025-25/08/2025  | Yet to Start  | Arpit |-|
 | Characterization using Charlib - NAND3_1  | 15/08/2025-25/08/2025   | Yet to Start  | Kowshik |-|
 # IIC-OSIC-TOOLS Analog Design Project Template (GlobalFoundries 180nm)
