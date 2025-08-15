@@ -1,6 +1,6 @@
 magic
 tech gf180mcuD
-timestamp 1755090733
+timestamp 1755274543
 << nwell >>
 rect -33 -57 150 14
 << nmos >>
@@ -214,4 +214,12 @@ rect 93 -75 108 -73
 rect 93 -81 97 -75
 rect 105 -81 108 -75
 rect 93 -82 108 -81
+<< labels >>
+rlabel metal1 5 -1 106 14 0 VDD
+rlabel metal1 -19 -116 137 -101 0 VSS
+rlabel metal1 0 0 0 0 0 Y
+rlabel polycontact 7 -65 15 -60 0 A
+rlabel polysilicon 34 -77 42 -71 0 B
+rlabel polycontact 66 -65 74 -60 0 C
+rlabel polycontact 98 -80 104 -75 0 D
 << end >>
