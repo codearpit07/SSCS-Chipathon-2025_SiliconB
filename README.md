@@ -25,7 +25,7 @@
 | DRC and LVS - NAND4_1 | 04/08/2025-15/08/2025  | Work in Progress  | Arpit |DRC Cleaned|
 | DRC and LVS - NAND3_1  | 04/08/2025-15/08/2025  | Work in Progress| Kowshik |DRC Cleaned|
 | Characterization using Charlib - NAND4_1  | 15/08/2025-25/08/2025  | Work in Progress  | Arpit |Installed Charlib on the docker container|
-| Characterization using Charlib - NAND3_1  | 15/08/2025-25/08/2025   | YWork in Progress  | Kowshik |-|
+| Characterization using Charlib - NAND3_1  | 15/08/2025-25/08/2025   | Work in Progress  | Kowshik |-|
 # IIC-OSIC-TOOLS Analog Design Project Template (GlobalFoundries 180nm)
 
 This repository is an analog design project template for the SSCS 2025 Chipathon (https://github.com/sscs-ose/sscs-chipathon-2025). The design environment is setup using the IIC-OSIC-TOOLS docker container (https://github.com/iic-jku/IIC-OSIC-TOOLS). The container is preconfigured with GlobalFoundries 180nm PDK (gf180mcuD).
